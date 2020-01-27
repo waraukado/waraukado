@@ -12,9 +12,9 @@ public class FileWriteEx {
     // ファイルにデータをLISTから書き込むサンプル
     public static void main(String[] args) {
     	// Paths.get() の引数は環境により指定
-    	Path path1 = Paths.get("D:/GitHub/waraukado/Java/File/","test1.txt");
+    	Path path1 = Paths.get("D:/File/","test1.txt");
     	Charset charset = Charset.forName("MS932");
-        List<String> list = new ArrayList<>(Arrays.asList("赤","黄","青"));
+        List<String> list = new ArrayList<>(Arrays.asList("A","B","C"));
      
         try {
             Files.write(path1,list,charset, 

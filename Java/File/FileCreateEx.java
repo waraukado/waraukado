@@ -10,11 +10,11 @@ public class FileCreateEx {
     	Path path1 = Paths.get("D:/GitHub/waraukado/Java/File/","test1.txt");
     	
         try {
-            if (!Files.exists(path1)) {
+            if (!Files.exists(path1)) { // path1に指定したファイルが存在しない場合作成
                 Files.createFile(path1);
             }
-		} catch (IOException e) {
+	} catch (IOException e) {
 			e.printStackTrace();
-		}
+	}
     }
 }

@@ -9,7 +9,7 @@ public class FileReadEx {
     // ファイルを読み込むサンプル
     public static void main(String[] args) {
     	// Paths.get() の引数は環境により指定
-        Path path1 = Paths.get("D:/GitHub/waraukado/Java/File/","test1.txt");
+        Path path1 = Paths.get("D:/File/","test1.txt");
         Charset charset = Charset.forName("MS932");
 
         try {

@@ -12,8 +12,8 @@ public class FileEnsyuu {
 
 	public static void main(String[] args) {
 		// Paths.get() の引数は環境により指定
-    	Path path1 = Paths.get("M:\\java\\","TextWrite.txt");
-    	Path path2 = Paths.get("M:\\java\\","TextWrite2.txt");
+    	Path path1 = Paths.get("M:\\java\\","TextWrite.txt"); // 元ファイルのパス
+    	Path path2 = Paths.get("M:\\java\\","TextWrite2.txt"); // コピー先ファイルのパス
 
     	Charset charset = Charset.forName("MS932");
 

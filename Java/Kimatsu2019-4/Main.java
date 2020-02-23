@@ -23,11 +23,13 @@ public class Main {
         Charset charset = Charset.forName("UTF-8");
         
         try {
+            // １行読み込み
         	List<String> line = Files.readAllLines(path1,charset);
             for (String s : line) {
-                //String sdata[] = s.split(",");
+                // Streamを使って　①カンマ分割　②String→Integer 変換を行い　int型配列に格納
                 int[] i_sdata = Stream.of(s.split(",")).mapToInt(Integer::parseInt).toArray();
-                //集計
+                
+                //集計：変換したint型配列と、Teamインスタンスが格納された配列をメソッドに渡す。
                 ScoreAgg(i_sdata,teams);
             }
         } catch (IOException e) {

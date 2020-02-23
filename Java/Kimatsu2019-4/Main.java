@@ -81,8 +81,9 @@ public class Main {
 
     //表示
     public static void ScoreDisp(Team[] teams){
+        // 見出しを表示する場合はココに
         for(Team T : teams){
-            System.out.println(T.getName() + T.getWin() + T.getLose() + "　" + T.getWinpoint());
+            System.out.println(T.getName()+ "：" + T.getWin() + "勝" +T.getLose() + "敗" + T.getDrow() + "分　" + T.getWinpoint()+ "点");
         }
     }
 

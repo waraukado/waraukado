@@ -12,8 +12,9 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) throws Exception{
         //Teamインスタンス生成
-        Team teams[] = {new Team("ライナーズ"),new Team("シャトルズ"),new Team("レッドスパークス"),
-                        new Team("シーウェーブス"),new Team("ウォーターガッシュ"),new Team("ブルーズマーズ"),
+        Team teams[] = {new Team("ライナーズ"),new Team("シャトルズ"),
+                        new Team("レッドスパークス"),new Team("シーウェーブス"),
+                        new Team("ウォーターガッシュ"),new Team("ブルーズマーズ"),
                         new Team("ヴォルテクス"),new Team("ブルーシャークス")};
         //CSVファイル読み込み
         // Paths.get() の引数は環境により指定
@@ -85,7 +86,9 @@ public class Main {
     public static void ScoreDisp(Team[] teams){
         // 見出しを表示する場合はココに
         for(Team T : teams){
-            System.out.println(T.getName()+ "：" + T.getWin() + "勝" +T.getLose() + "敗" + T.getDrow() + "分　" + T.getWinpoint()+ "点");
+            System.out.println(T.getName()+ "：" + T.getWin() + "勝"
+                               +T.getLose() + "敗" + T.getDrow()
+                               + "分　" + T.getWinpoint()+ "点");
         }
     }
 

@@ -12,7 +12,9 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) throws Exception{
         //Teamインスタンス生成
-        Team teams[] = {new Team("ライナーズ"),new Team("シャトルズ"),new Team("レッドスパークス"),new Team("シーウェーブス"),new Team("ウォーターガッシュ"),new Team("ブルーズマーズ"),new Team("ヴォルテクス"),new Team("ブルーシャークス")};
+        Team teams[] = {new Team("ライナーズ"),new Team("シャトルズ"),new Team("レッドスパークス"),
+                        new Team("シーウェーブス"),new Team("ウォーターガッシュ"),new Team("ブルーズマーズ"),
+                        new Team("ヴォルテクス"),new Team("ブルーシャークス")};
         //CSVファイル読み込み
         // Paths.get() の引数は環境により指定
         

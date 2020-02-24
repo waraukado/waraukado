@@ -64,8 +64,9 @@ public class Team {
         this.winpoint = winpoint;
     }
 
-    Team(String name){
+    Team(String name,int teamno){
         this.name = name;
+        this.teamno = teamno;
     }
     
 }

@@ -33,15 +33,20 @@ public class Main {
 
 			// Wizardの回復行動（エイド）
 			if(w.hp > 0){
-				int hantei = new Random().nextInt(2);
-				switch(hantei){
-					case 0:
+				// 回復対象が力尽きていないか判定
+				do{
+					i_party = a_party[new Random().nextInt(2)]; // a_party配列から攻撃対象を決定。0はすでに力尽きたメンバーなので、0以外が選ばれるまで繰り返し
+				}while(i_party == 0);
+
+				switch(i_party){
+					case 1:
 						w.aid(h);
 						break;
-					case 1:
+					case 2:
 						w.aid(f);
 						break;
 				}
+				i_party = 0; // 初期化
 			}
 
 			// ドラゴンの攻撃

@@ -1,10 +1,16 @@
 public class Matango {
-	int hp; // ＨＰ
+	int hp = 50; // ＨＰ
 	char suffix; // 識別
-	final int LEVEL = 10;
 
-	void run() { // 逃げる
+	public Matango(char suffix) {
+		this.suffix = suffix;
+	}
+
+	public void attack(Hero h) {
 		System.out.println
-		("お化けキノコ" + this.suffix + "は、逃げ出した");
+		("キノコ" + this.suffix + "の攻撃！");
+		System.out.println
+		("10ポイントのダメージをあたえた！");
+		h.hp -= 10;
 	}
 }

@@ -16,7 +16,7 @@ public class Main {
 		LocalDateTime ld = LocalDateTime.now(); //現在日時を取得
 		System.out.println(ld.format(dtf));
 
-		//ユーザー名入力（追加機能・なくてもＯＫ）
+		//ユーザー名入力（追加機能・なくてもＯＫ　不要な場合は以下2行をコメントアウト）
 		System.out.println("名前を入力してください");
 		P1.Pname = new java.util.Scanner(System.in).nextLine();
 

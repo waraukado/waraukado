@@ -30,10 +30,10 @@ public class Main{
         System.out.println("◎オーナー情報");
         // 姓
         System.out.print("　お名前（姓）：");
-        driver.setFirstName(scn.nextLine());
+        driver.setLastName(scn.nextLine());
         // 名
         System.out.print("　お名前（名）：");
-        driver.setLastName(scn.nextLine());
+        driver.setFirstName(scn.nextLine());
 
         // メイン処理（ドライブ）
         System.out.println("走行：1　給油：2　終了：99");
